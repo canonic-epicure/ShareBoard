@@ -1,0 +1,26 @@
+h1 {
+	font-size: 2em;
+	padding : 0.6em 0 0.6em 0;
+}
+
+
+h2 {
+    font-size: 1.3em;
+    padding : 0.3em 0 0.3em 0;
+}
+
+
+p {
+	padding-bottom: 0.5em;
+	
+	text-align : justify;
+}
+
+pre {
+	border : 1px dashed #d2ceb0;
+	font-family : Monaco,"Courier New",monospace;
+	font-size : 90%;
+	overflow : auto;
+	padding : 5px;
+	margin : 10px 0px;
+}

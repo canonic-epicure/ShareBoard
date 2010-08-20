@@ -1,0 +1,96 @@
+body {
+	font-family : helvetica,arial,freesans,clean,sans-serif;
+	font-size : 15.34px;
+	font-size-adjust : none;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	line-height : normal;
+	
+	overflow-y : auto !important;
+	
+	background-color : white;
+}
+
+.grayed {
+	background-color : #e3e0c7 !important;
+}
+
+
+a {
+	text-decoration : none;
+	color : #7f7c69;
+}
+
+
+a:hover {
+	text-decoration : underline;
+}
+
+
+a:VISITED {
+	color : #7f7c69;
+}
+
+.JooseIt-Content {
+	width : 900px
+}
+
+
+.JooseIt-Content-Center {
+	background-color: white;
+	
+	padding-bottom : 20px;
+}
+
+
+.JooseIt-Content-Header {
+    background-image: url(../images/background/page.png);
+    background-repeat: repeat-x;
+    
+    border-bottom : 1px solid #e3e0c7;
+}
+
+
+.JooseIt-Content-Footer {
+	border-top : 1px solid #d2ceb0;
+	color : #AAA;
+	padding-top : 20px;
+	
+	font-size:12px;
+}
+
+
+.JooseIt-Widget-NotFound {
+	text-align: center;
+	
+	font-size   : 26px;
+	font-weight : bold;
+	
+	position: relative;
+}
+
+
+.JooseIt-GitHub {
+    position: absolute; 
+    top: 0; 
+    right: 0;
+    
+    width : 149px;
+    height : 149px;
+    
+    zoom : 1; 
+    
+    background-image : url(../images/forkme_right_green_007200.png);
+    
+    cursor : pointer;
+}
+
+
+.jit_nav_button div {
+	left : 0px;
+}
+
+.x-masked {
+    overflow: auto !important;
+}
