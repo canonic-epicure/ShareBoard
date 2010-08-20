@@ -32,19 +32,19 @@ a:VISITED {
 	color : #7f7c69;
 }
 
-.JooseIt-Content {
+.ShareBoard-Content {
 	width : 900px
 }
 
 
-.JooseIt-Content-Center {
+.ShareBoard-Content-Center {
 	background-color: white;
 	
 	padding-bottom : 20px;
 }
 
 
-.JooseIt-Content-Header {
+.ShareBoard-Content-Header {
     background-image: url(../images/background/page.png);
     background-repeat: repeat-x;
     
@@ -52,7 +52,7 @@ a:VISITED {
 }
 
 
-.JooseIt-Content-Footer {
+.ShareBoard-Content-Footer {
 	border-top : 1px solid #d2ceb0;
 	color : #AAA;
 	padding-top : 20px;
@@ -61,7 +61,7 @@ a:VISITED {
 }
 
 
-.JooseIt-Widget-NotFound {
+.ShareBoard-Widget-NotFound {
 	text-align: center;
 	
 	font-size   : 26px;
@@ -71,7 +71,7 @@ a:VISITED {
 }
 
 
-.JooseIt-GitHub {
+.ShareBoard-GitHub {
     position: absolute; 
     top: 0; 
     right: 0;
