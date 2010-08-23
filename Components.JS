@@ -23,8 +23,10 @@ COMPONENTS = {
     "Bundle" : [
         "jsan:Task.Symbie.Bundle",
         
+        {
+            "text" : "JooseX.Namespace.Depended.Manager.my.INC = [ '/jsan', '../../lib' ]"
+        },
+        
         "+Core"
     ]
 }
-
-
