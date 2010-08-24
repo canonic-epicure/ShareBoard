@@ -4,7 +4,6 @@ COMPONENTS = {
     "Core" : [
         "ShareBoard.Control.NavigationButton",
         
-        "ShareBoard.Widget.PageReport",
         "ShareBoard.Widget.Footer",
         "ShareBoard.Widget.Header",
         "ShareBoard.Widget.Home",
