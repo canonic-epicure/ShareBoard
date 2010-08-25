@@ -20,8 +20,9 @@ COMPONENTS = {
         
         "ShareBoard.Widget.Board",
         "ShareBoard.Widget.Board.Tool",
-        "ShareBoard.Widget.Board.Tool.Path",
+        "ShareBoard.Widget.Board.Tool.Line",
         "ShareBoard.Widget.Board.Tool.Circle",
+        "ShareBoard.Widget.Board.Tool.Cursor",
         
         "ShareBoard.Layout.Centered",
         "ShareBoard.Layout.Site",
