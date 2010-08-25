@@ -9,6 +9,8 @@ COMPONENTS = {
     
         "ShareBoard.Control.NavigationButton",
         
+        "ShareBoard.Widget.Role.LocalEvent",
+        
         "ShareBoard.Widget.Footer",
         "ShareBoard.Widget.Header",
         "ShareBoard.Widget.Home",
