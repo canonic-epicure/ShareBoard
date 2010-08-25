@@ -2,6 +2,10 @@ COMPONENTS = {
     // a comment
     
     "Core" : [
+        "ShareBoard.Model.Board",
+        "ShareBoard.Model.Board.Element",
+        "ShareBoard.Model.Board.Element.Path",
+    
         "ShareBoard.Control.NavigationButton",
         
         "ShareBoard.Widget.Footer",
@@ -12,6 +16,10 @@ COMPONENTS = {
         "ShareBoard.Router",
         
         "ShareBoard.Widget.Root",
+        
+        "ShareBoard.Widget.Board",
+        "ShareBoard.Widget.Board.Element",
+        "ShareBoard.Widget.Board.Element.Path",
         
         "ShareBoard.Layout.Centered",
         "ShareBoard.Layout.Site",
