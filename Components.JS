@@ -5,6 +5,7 @@ COMPONENTS = {
         "ShareBoard.Model.Board",
         "ShareBoard.Model.Board.Element",
         "ShareBoard.Model.Board.Element.Path",
+        "ShareBoard.Model.Board.Element.Circle",
     
         "ShareBoard.Control.NavigationButton",
         
@@ -20,6 +21,7 @@ COMPONENTS = {
         "ShareBoard.Widget.Board",
         "ShareBoard.Widget.Board.Element",
         "ShareBoard.Widget.Board.Element.Path",
+        "ShareBoard.Widget.Board.Element.Circle",
         
         "ShareBoard.Layout.Centered",
         "ShareBoard.Layout.Site",
