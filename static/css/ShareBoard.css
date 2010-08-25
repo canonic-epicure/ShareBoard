@@ -71,19 +71,8 @@ a:VISITED {
 }
 
 
-.ShareBoard-GitHub {
-    position: absolute; 
-    top: 0; 
-    right: 0;
-    
-    width : 149px;
-    height : 149px;
-    
-    zoom : 1; 
-    
-    background-image : url(../images/forkme_right_green_007200.png);
-    
-    cursor : pointer;
+.ShareBoard-Board {
+	cursor : pointer
 }
 
 

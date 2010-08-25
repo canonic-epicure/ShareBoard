@@ -19,9 +19,9 @@ COMPONENTS = {
         "ShareBoard.Widget.Root",
         
         "ShareBoard.Widget.Board",
-        "ShareBoard.Widget.Board.Element",
-        "ShareBoard.Widget.Board.Element.Path",
-        "ShareBoard.Widget.Board.Element.Circle",
+        "ShareBoard.Widget.Board.Tool",
+        "ShareBoard.Widget.Board.Tool.Path",
+        "ShareBoard.Widget.Board.Tool.Circle",
         
         "ShareBoard.Layout.Centered",
         "ShareBoard.Layout.Site",
