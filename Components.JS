@@ -4,6 +4,7 @@ COMPONENTS = {
     "Core" : [
         "ShareBoard.Model.Board",
         "ShareBoard.Model.Board.Element",
+        "ShareBoard.Model.Board.Element.Line",
         "ShareBoard.Model.Board.Element.Path",
         "ShareBoard.Model.Board.Element.Circle",
     
@@ -35,6 +36,7 @@ COMPONENTS = {
     
     "Bundle" : [
         "jsan:Task.Symbie.Bundle",
+        "jsan:Data.UUID",
         
         {
             "text" : "JooseX.Namespace.Depended.Manager.my.INC = [ '/jsan', '../../lib' ]"
