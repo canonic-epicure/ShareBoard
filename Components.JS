@@ -25,6 +25,7 @@ COMPONENTS = {
         "ShareBoard.Widget.Board.Tool.Line",
         "ShareBoard.Widget.Board.Tool.Circle",
         "ShareBoard.Widget.Board.Tool.Cursor",
+        "ShareBoard.Widget.Board.Tool.Curve",
         
         "ShareBoard.Layout.Centered",
         "ShareBoard.Layout.Site",
