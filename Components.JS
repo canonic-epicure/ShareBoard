@@ -5,7 +5,7 @@ COMPONENTS = {
         "ShareBoard.Model.Board",
         "ShareBoard.Model.Board.Element",
         "ShareBoard.Model.Board.Element.Line",
-        "ShareBoard.Model.Board.Element.Path",
+        "ShareBoard.Model.Board.Element.Curve",
         "ShareBoard.Model.Board.Element.Circle",
     
         "ShareBoard.Control.NavigationButton",
@@ -34,13 +34,24 @@ COMPONENTS = {
     ],
     
     
-    "Bundle" : [
+    "Prereq" : [
         "jsan:Task.Symbie.Bundle",
-        "jsan:Data.UUID",
-        
         {
             "text" : "JooseX.Namespace.Depended.Manager.my.INC = [ '/jsan', '../../lib' ]"
         },
+        "jsan:Data.UUID",
+        "jsan:Shotenjin.Joosed.Template",
+        "jsan:Task.SymbieX.Template.Shotenjin.Core",
+        "=static/deps/raphael/raphael-min-1.5.0.js",
+        "=static/deps/faye/faye-browser.js",
+        "jsan:Johnny.Mnemonic",
+        "jsan:SymbieX.History.Router",
+        "jsan:JooseX.Class.Singleton"
+    ],
+    
+    
+    "Bundle" : [
+        "+Prereq",
         
         "+Core"
     ]
