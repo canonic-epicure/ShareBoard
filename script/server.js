@@ -32,49 +32,6 @@ use([
     var client = bayeux.getClient()
     
     
-    var boards = {}
-    
-    
-    
-    
-    
-    client.subscribe('/board/new', function (message) {
-    
-        
-        
-        var boardID = 1
-        
-        client.subscribe('/board/' + boardID, function (message) {
-        
-        })
-        
-        client.subscribe('/board/tool', function (message) {
-        
-        })
-        
-    })
-    
-    
-    
-    client.subscribe('/board/connect', function (message) {
-    
-        
-        
-        var boardID = 1
-        
-        client.subscribe('/board/' + boardID, function (message) {
-        
-        })
-        
-        client.subscribe('/board/tool', function (message) {
-        
-        })
-        
-    })
-    
-    
-    
-    
     var backend = new KiokuJS.Backend.CouchDB({
         host    : 'localhost',
         port    : 80,
@@ -96,20 +53,50 @@ use([
     })
     
     
-    app.get('/board/create', function (req, res){
+    app.get('/board/publish', function (req, res) {
         
-        var newBoard = new ShareBoard.Model.Board()
+        var entries = req.body
         
-        var scope = handler.newScope()
-        
-        scope.store(newBoard).andThen(function (id) {
+        KiokuJS.store(entries).andThen(function () {
             
-            puts(id)
+            var board       = KiokuJS.expand(entries)            
+            var boardID     = board.uuid
+            
+            
+            client.subscribe('/board/' + boardID + '/update', function (message) {
+                
+            })
+            
+            client.subscribe('/board/' + boardID + '/tool', function (message) {
+            
+            })
         })
         
-        res.send(newBoard.uuid + '')
+        res.send({ result : 'ok' })
     })
     
+
+    app.get('/board/fetch', function (req, res) {
+        
+        var id = req.param('id')
+        
+        KiokuJS.fetch(id).andThen(function (board, entries) {
+            
+            var board       = KiokuJS.expand(entries)            
+            var boardID     = board.uuid
+            
+            
+            client.subscribe('/board/' + boardID + '/update', function (message) {
+                
+            })
+            
+            client.subscribe('/board/' + boardID + '/tool', function (message) {
+            
+            })
+        })
+        
+        res.send({ result : entries })
+    })
     
     app.get('/asd', function(req, res){
         
