@@ -21,6 +21,9 @@ COMPONENTS = {
         
         "ShareBoard.Widget.Root",
         
+        "ShareBoard.Widget.Board.Element",
+        "ShareBoard.Widget.Board.Element.Line",
+        
         "ShareBoard.Widget.Board",
         "ShareBoard.Widget.Board.Tool",
         "ShareBoard.Widget.Board.Tool.Line",

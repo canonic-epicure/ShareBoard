@@ -14,7 +14,7 @@ var express = require('express')
 
 use([
 
-    'ShareBoard.Model.Board',
+//    'ShareBoard.Model.Board',
     'KiokuJS',
     'KiokuJS.Backend.CouchDB'
 
