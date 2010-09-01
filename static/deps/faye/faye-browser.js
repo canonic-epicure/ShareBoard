@@ -593,7 +593,7 @@ Faye.Client = Faye.Class({
   CONNECTION_TIMEOUT:   60.0,
   
   DEFAULT_ENDPOINT:     '/bayeux',
-  MAX_DELAY:            0.001,
+  MAX_DELAY:            0.200,
   INTERVAL:             0.0,
   
   initialize: function(endpoint, options) {
