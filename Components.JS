@@ -55,7 +55,9 @@ COMPONENTS = {
     
     "Vero" : [
         "Vero.Mutation",
-        "Vero.Mutation.Packet",
+        "Vero.Mutation.Create",
+        "Vero.Mutation.Delete",
+        "Vero.Mutation.Update",
     
         "Vero.Meta",
         "Vero.Meta.Attribute",
