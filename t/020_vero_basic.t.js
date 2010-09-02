@@ -14,9 +14,6 @@ StartTest(function(t) {
         
         trait   : Vero.Meta,
         
-        does    : Vero.Role,
-        
-        
         has : {
             attr1 : {
                 trait : Vero.Meta.Attribute,
