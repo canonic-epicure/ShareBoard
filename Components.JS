@@ -53,6 +53,21 @@ COMPONENTS = {
     ],
     
     
+    "Vero" : [
+        "Vero.Mutation",
+        "Vero.Mutation.Packet",
+    
+        "Vero.Meta",
+        "Vero.Meta.Attribute",
+        
+        
+        "Vero.Object",
+        "Vero.Role",
+        
+        "Vero.Channel"
+    ],
+    
+    
     "Bundle" : [
         "+Prereq",
         

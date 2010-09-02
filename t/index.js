@@ -24,6 +24,7 @@ Harness.configure({
         
     ] : [
         "Task.ShareBoard.Bundle",
+        "Task.ShareBoard.Vero",
         {
             text : "JooseX.Namespace.Depended.Manager.my.INC = " + Ext.encode(Harness.absolutizeINC(INC))
         }
@@ -32,6 +33,7 @@ Harness.configure({
 
 
 Harness.start(
-    '010_sanity.t.js'
+    '010_sanity.t.js',
+    '020_vero_basic.t.js'
 )
 
