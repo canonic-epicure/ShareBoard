@@ -52,6 +52,7 @@ StartTest(function(t) {
     
     var instanceTransfered  = false
     var instanceMutated     = false
+    var instanceMutatedBack = false
 
     var async1 = t.beginAsync()
     
@@ -93,7 +94,23 @@ StartTest(function(t) {
             
             t.ok(instance.attr2 == 'attr2', 'Correct value for `attr2`')
             t.ok(instance.attr3 == 'attr3', 'Correct value for `attr3`')
+            
+            instance.setAttr3('attr3-from-channel2')
+            
+            instance.commit()
+            
+            channel2.commit()
         })
+        
+        
+        channel1.on('mutation', function (instance, packet, channel) {
+            instanceMutatedBack = true
+            
+            t.ok(instance === test, "Correct instance is being mutated")
+            
+            t.ok(instance.attr3 == 'attr3-from-channel2', 'Correct value for `attr3`')
+        })
+        
         
         
     }, 1000)
@@ -106,6 +123,7 @@ StartTest(function(t) {
         
         t.ok(instanceTransfered, 'Instance has been transfered')
         t.ok(instanceMutated, 'Instance has been mutated')
+        t.ok(instanceMutatedBack, 'Instance has been mutated back to the 1st channel')
         
         t.endAsync(async1)
         t.done()
