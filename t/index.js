@@ -15,6 +15,8 @@ var INC = (isNode ? require.paths : []).concat('../lib', '/jsan')
 Harness.configure({
     title     : 'ShareBoard Test Suite',
     
+    passThroughEx : true,
+    
     preload : Joose.is_NodeJS ? [
 //        "jsan:Task.Joose.Core",
 //        "jsan:Task.JooseX.Namespace.Depended.NodeJS",
@@ -24,7 +26,6 @@ Harness.configure({
         
     ] : [
         "Task.ShareBoard.Bundle",
-        "Task.ShareBoard.Vero",
         {
             text : "JooseX.Namespace.Depended.Manager.my.INC = " + Ext.encode(Harness.absolutizeINC(INC))
         }

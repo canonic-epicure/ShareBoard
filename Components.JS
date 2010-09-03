@@ -75,6 +75,8 @@ COMPONENTS = {
     "Bundle" : [
         "+Prereq",
         
+        "+Vero",
+        
         "+Core"
     ]
 }
