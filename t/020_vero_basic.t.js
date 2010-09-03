@@ -16,19 +16,19 @@ StartTest(function(t) {
         
         has : {
             attr1 : {
-                trait : Vero.Meta.Attribute,
+                trait : Vero.Attribute,
                 
                 init    : 'attr1'
                 
             },
             
             attr2 : {
-                trait : Vero.Meta.Attribute
+                trait : Vero.Attribute
             },
             
             
             attr3 : {
-                trait : Vero.Meta.Attribute
+                trait : Vero.Attribute
             }
         }
         

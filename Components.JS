@@ -59,7 +59,7 @@ COMPONENTS = {
         "Vero.Mutation.Delete",
         "Vero.Mutation.Update",
     
-        "Vero.Meta.Attribute",
+        "Vero.Attribute",
         
         "Vero.Object",
         "Vero.Role",
