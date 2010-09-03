@@ -54,6 +54,8 @@ COMPONENTS = {
     
     
     "Vero" : [
+        "Vero.Object",
+    
         "Vero.Mutation",
         "Vero.Mutation.Create",
         "Vero.Mutation.Delete",
@@ -61,7 +63,7 @@ COMPONENTS = {
     
         "Vero.Attribute",
         
-        "Vero.Object",
+        
         "Vero.Role",
         
         "Vero",
