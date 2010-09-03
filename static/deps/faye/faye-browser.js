@@ -1754,10 +1754,15 @@ Faye.XHRTransport = Faye.Class(Faye.Transport, {
     Faye.XHR.request('post', this._endpoint, Faye.toJSON(message), {
       success:function(response) {
         try {
-          this.receive(JSON.parse(response.text()));
+            var res = JSON.parse(response.text())
+          
         } catch (e) {
           retry();
+          
+          return
         }
+        
+        this.receive(res);
       },
       failure: retry
     }, this);

@@ -35,6 +35,7 @@ Harness.configure({
 
 Harness.start(
     '010_sanity.t.js',
-    '020_vero_basic.t.js'
+    '020_vero_basic.t.js',
+    '030_vero_transfer.t.js'
 )
 

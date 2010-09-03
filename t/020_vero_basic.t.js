@@ -41,9 +41,13 @@ StartTest(function(t) {
     //======================================================================================================================================================================================================================================================
     t.diag('Instantiation')
     
-    var channel     = new Vero.Channel()
+    var channel     = new Vero.Channel({
+        url     : 'http://local/8080/faye'
+    })
     
     var test = new TestClass({
+        channel : channel,
+        
         attr2   : 'attr2',
         attr3   : 'attr3'
     })
@@ -55,19 +59,24 @@ StartTest(function(t) {
     
     t.ok(VERO.history.length == 1, 'History has 1 packet')
     
-    t.ok(VERO.history[0] instanceof Vero.Mutation.Packet, 'History has 1 *packet*, indeed')
+    t.ok(VERO.history[0] instanceof Array, 'Packet isa Array')
     
     
     var packet = VERO.history[0]
     
-    t.ok(packet.length() == 2, 'Packet has 2 mutations')
-    t.ok(packet.type == 'create', 'Packet type is `create`')
+    t.ok(packet.length == 3, 'Packet has 2 mutations')
     
-    var mutation0 = packet.mutations[ 0 ]
-    var mutation1 = packet.mutations[ 1 ]
+    var creation  = packet[ 0 ]
+    
+    t.ok(creation.objectUUID == VERO.UUID, 'Creation refer to correct VERO')
+    
+    var mutation0 = packet[ 1 ]
+    var mutation1 = packet[ 2 ]
     
     t.ok(mutation0.attributeName == 'attr2' || mutation0.attributeName == 'attr3', 'Order is not guaranteed')
     t.ok(mutation1.attributeName == 'attr2' || mutation1.attributeName == 'attr3', 'Order is not guaranteed')
+    
+    t.ok(mutation1.objectUUID == VERO.UUID, 'Mutation refer to correct VERO')
 
     
     //======================================================================================================================================================================================================================================================
@@ -83,19 +92,21 @@ StartTest(function(t) {
     
     var packet = VERO.history[1]
     
-    t.ok(packet.length() == 2, 'Packet has 2 mutations')
+    t.ok(packet.length == 2, 'Packet has 2 mutations')
     
-    var mutation0 = packet.mutations[ 0 ]
-    var mutation1 = packet.mutations[ 1 ]
+    var mutation0 = packet[ 0 ]
+    var mutation1 = packet[ 1 ]
     
+    t.ok(mutation0.objectUUID == VERO.UUID, 'Correct UUID for mutation 0')
     t.ok(mutation0.attributeName == 'attr1', 'Correct attribute name for mutation 0')
     t.ok(mutation0.oldValue == 'attr1', 'Correct old value for mutation 0')
     t.ok(mutation0.newValue == 'mutate1', 'Correct new value for mutation 0')
     
+    t.ok(mutation1.objectUUID == VERO.UUID, 'Correct UUID for mutation 1')
     t.ok(mutation1.attributeName == 'attr2', 'Correct attribute name for mutation 1')
     t.ok(mutation1.oldValue == 'attr2', 'Correct old value for mutation 1')
     t.ok(mutation1.newValue == 'mutate2', 'Correct new value for mutation 1')
     
-        
+    
     t.done()
 })    
