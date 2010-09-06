@@ -53,29 +53,9 @@ COMPONENTS = {
     ],
     
     
-    "Vero" : [
-        "Vero.Object",
-    
-        "Vero.Mutation",
-        "Vero.Mutation.Create",
-        "Vero.Mutation.Delete",
-        "Vero.Mutation.Update",
-    
-        "Vero.Attribute",
-        
-        
-        "Vero.Role",
-        
-        "Vero",
-        
-        "Vero.Channel"
-    ],
-    
     
     "Bundle" : [
         "+Prereq",
-        
-        "+Vero",
         
         "+Core"
     ]
