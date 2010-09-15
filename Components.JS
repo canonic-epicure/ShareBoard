@@ -42,18 +42,22 @@ COMPONENTS = {
         {
             "text" : "JooseX.Namespace.Depended.Manager.my.INC = [ '/jsan', '../../lib' ]"
         },
+
         "jsan:Data.UUID",
+        
         "jsan:Shotenjin.Joosed.Template",
         "jsan:Task.SymbieX.Template.Shotenjin.Core",
+        
         "=static/deps/raphael/raphael-min-1.5.0.js",
+        
         "jsan:Johnny.Mnemonic",
         "jsan:SymbieX.History.Router",
+        
         "jsan:JooseX.Class.Singleton",
         
         
         "jsan:Task.HTTP.Request.Provider.Auto",
         
-        "jsan:Data.UUID",
         "jsan:Data.Visitor",
         "jsan:Task.JSON2.Bundle",
         "jsan:Task.JooseX.Observable.Core",
