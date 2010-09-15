@@ -5,8 +5,8 @@ COMPONENTS = {
         "ShareBoard.Model.Board",
         "ShareBoard.Model.Board.Element",
         "ShareBoard.Model.Board.Element.Line",
-        "ShareBoard.Model.Board.Element.Curve",
-        "ShareBoard.Model.Board.Element.Circle",
+//        "ShareBoard.Model.Board.Element.Curve",
+//        "ShareBoard.Model.Board.Element.Circle",
     
         "ShareBoard.Control.NavigationButton",
         
@@ -27,9 +27,9 @@ COMPONENTS = {
         "ShareBoard.Widget.Board",
         "ShareBoard.Widget.Board.Tool",
         "ShareBoard.Widget.Board.Tool.Line",
-        "ShareBoard.Widget.Board.Tool.Circle",
-        "ShareBoard.Widget.Board.Tool.Cursor",
-        "ShareBoard.Widget.Board.Tool.Curve",
+//        "ShareBoard.Widget.Board.Tool.Circle",
+//        "ShareBoard.Widget.Board.Tool.Cursor",
+//        "ShareBoard.Widget.Board.Tool.Curve",
         
         "ShareBoard.Layout.Centered",
         "ShareBoard.Layout.Site",
@@ -46,10 +46,21 @@ COMPONENTS = {
         "jsan:Shotenjin.Joosed.Template",
         "jsan:Task.SymbieX.Template.Shotenjin.Core",
         "=static/deps/raphael/raphael-min-1.5.0.js",
-        "=static/deps/faye/faye-browser.js",
         "jsan:Johnny.Mnemonic",
         "jsan:SymbieX.History.Router",
-        "jsan:JooseX.Class.Singleton"
+        "jsan:JooseX.Class.Singleton",
+        
+        
+        "jsan:Task.HTTP.Request.Provider.Auto",
+        
+        "jsan:Data.UUID",
+        "jsan:Data.Visitor",
+        "jsan:Task.JSON2.Bundle",
+        "jsan:Task.JooseX.Observable.Core",
+        
+        "jsan:Task.KiokuJS.Core",
+        "jsan:Task.KiokuJS.Backend.CouchDB.Core",
+        "jsan:Task.Syncler.Core"
     ],
     
     
