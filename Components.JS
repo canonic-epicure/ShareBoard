@@ -2,6 +2,8 @@ COMPONENTS = {
     // a comment
     
     "Core" : [
+        "ShareBoard.Model.Board.View",
+    
         "ShareBoard.Model.Board",
         "ShareBoard.Model.Board.Element",
         "ShareBoard.Model.Board.Element.Line",
