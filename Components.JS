@@ -77,5 +77,3 @@ COMPONENTS = {
         "+Core"
     ]
 }
-
-
