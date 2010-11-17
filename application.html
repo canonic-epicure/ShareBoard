@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+        <title>ShareBoard - simple collaborative sketching</title>
+        
+        <meta name="google-site-verification" content="XXX" />
+        <meta content="chrome=1" http-equiv="X-UA-Compatible">
+        <meta content="ShareBoard - collaborative sketching" name="description">
+        <meta content="ShareBoard, collaborative, sketching" name="keywords">
+        
+        
+        <link rel="stylesheet" type="text/css" href='/jsan/Task/ExtJS/resources/css/ext-all.css'>
+
+        <link rel="stylesheet" type="text/css" href="/jsan/ExtX/Layout/static/ExtX.Layout.RowFit.css">
+        <link rel="stylesheet" type="text/css" href="/jsan/ExtX/Layout/static/ExtX.Layout.ColumnFit.css">
+        <link rel="stylesheet" type="text/css" href="/jsan/ExtX/Layout/static/ExtX.Layout.CenterBoth.css">
+        <link rel="stylesheet" type="text/css" href="/jsan/ExtX/Layout/static/ExtX.Layout.CenterHorizontally.css">
+
+        
+        <link rel="stylesheet" type="text/css" href="lib/ShareBoard/static/css/ShareBoard.css">
+        
+        <script type="text/javascript" src="/jsan/Task/Symbie/ExtJSBundle.js"></script>
+        <script type="text/javascript" src="/jsan/Task/KiokuJS/Core.js"></script>
+        <script type="text/javascript" src="/jsan/Task/Syncler/Core.js"></script>
+	</head>
+	
+	<body>
+        <script type="text/javascript">
+            JooseX.Namespace.Depended.Manager.my.INC = [ 'lib', '/jsan' ]
+            
+            use([ 'ShareBoard' ], function () {
+            	
+            	ShareBoard().run('/').now()
+            })
+            
+        </script>
+	</body>
+</html>
