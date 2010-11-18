@@ -20,19 +20,23 @@
         <link rel="stylesheet" type="text/css" href="lib/ShareBoard/static/css/ShareBoard.css">
         
         <script type="text/javascript" src="/jsan/Task/Symbie/ExtJSBundle.js"></script>
+        <script type="text/javascript">
+            JooseX.Namespace.Depended.Manager.my.INC = [ 'lib', '/jsan' ]
+        </script>
+        
         <script type="text/javascript" src="/jsan/Task/KiokuJS/Core.js"></script>
         <script type="text/javascript" src="/jsan/Task/Syncler/Core.js"></script>
+        
+        <script type="text/javascript" src="lib/Task/ShareBoard/Core.js"></script>
 	</head>
 	
 	<body>
         <script type="text/javascript">
-            JooseX.Namespace.Depended.Manager.my.INC = [ 'lib', '/jsan' ]
-            
+        
             use([ 'ShareBoard' ], function () {
             	
             	ShareBoard().run('/').now()
             })
-            
         </script>
 	</body>
 </html>
