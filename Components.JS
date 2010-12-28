@@ -13,7 +13,7 @@ COMPONENTS = {
     "Core" : [
         "+Model",
         
-        "ShareBoard.Widget.Role.LocalEvent",
+        "ShareBoard.Role.LocalEvent",
 
         "ShareBoard.Widget.Footer",
         "ShareBoard.Widget.Header",
@@ -27,8 +27,8 @@ COMPONENTS = {
         
         "ShareBoard.View.Board",
         
-        "ShareBoard.Widget.Board.Tool",
-        "ShareBoard.Widget.Board.Tool.Line",
+        "ShareBoard.View.Tool",
+        "ShareBoard.View.Tool.Line",
         
         "ShareBoard.Layout.Centered",
         "ShareBoard.Layout.Site",
