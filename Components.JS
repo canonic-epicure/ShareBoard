@@ -1,5 +1,4 @@
 COMPONENTS = {
-    // a comment
     
     "Core" : [
         "ShareBoard.Model.Board.View",
@@ -7,13 +6,9 @@ COMPONENTS = {
         "ShareBoard.Model.Board",
         "ShareBoard.Model.Board.Element",
         "ShareBoard.Model.Board.Element.Line",
-////        "ShareBoard.Model.Board.Element.Curve",
         "ShareBoard.Model.Board.Element.Circle",
-//    
-//        "ShareBoard.Control.NavigationButton",
-//        
         "ShareBoard.Widget.Role.LocalEvent",
-//        
+
         "ShareBoard.Widget.Footer",
         "ShareBoard.Widget.Header",
         "ShareBoard.Widget.Home",
@@ -21,17 +16,14 @@ COMPONENTS = {
         
         "ShareBoard.Widget.Root",
         
-        "ShareBoard.Widget.Board.Element",
-        "ShareBoard.Widget.Board.Element.Line",
-//        "ShareBoard.Widget.Board.Element.Circle",
+        "ShareBoard.View.Board.Element",
+        "ShareBoard.View.Board.Element.Line",
         
-        "ShareBoard.Widget.Board",
+        "ShareBoard.View.Board",
+        
         "ShareBoard.Widget.Board.Tool",
         "ShareBoard.Widget.Board.Tool.Line",
-//        "ShareBoard.Widget.Board.Tool.Circle",
-////        "ShareBoard.Widget.Board.Tool.Cursor",
-////        "ShareBoard.Widget.Board.Tool.Curve",
-//        
+        
         "ShareBoard.Layout.Centered",
         "ShareBoard.Layout.Site",
         "ShareBoard"
