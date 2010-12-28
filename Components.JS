@@ -1,12 +1,18 @@
 COMPONENTS = {
     
-    "Core" : [
+    "Model" : [
         "ShareBoard.Model.Board.View",
     
         "ShareBoard.Model.Board",
         "ShareBoard.Model.Board.Element",
         "ShareBoard.Model.Board.Element.Line",
-        "ShareBoard.Model.Board.Element.Circle",
+        "ShareBoard.Model.Board.Element.Circle"
+    ],
+    
+    
+    "Core" : [
+        "+Model",
+        
         "ShareBoard.Widget.Role.LocalEvent",
 
         "ShareBoard.Widget.Footer",
