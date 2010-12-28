@@ -24,11 +24,13 @@ COMPONENTS = {
         
         "ShareBoard.View.Board.Element",
         "ShareBoard.View.Board.Element.Line",
+        "ShareBoard.View.Board.Element.Circle",
         
         "ShareBoard.View.Board",
         
         "ShareBoard.View.Tool",
         "ShareBoard.View.Tool.Line",
+        "ShareBoard.View.Tool.Circle",
         
         "ShareBoard.Layout.Centered",
         "ShareBoard.Layout.Site",
