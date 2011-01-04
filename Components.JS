@@ -6,7 +6,8 @@ COMPONENTS = {
         "ShareBoard.Model.Board",
         "ShareBoard.Model.Board.Element",
         "ShareBoard.Model.Board.Element.Line",
-        "ShareBoard.Model.Board.Element.Circle"
+        "ShareBoard.Model.Board.Element.Circle",
+        "ShareBoard.Model.Board.Element.Cursor"
     ],
     
     
@@ -25,12 +26,14 @@ COMPONENTS = {
         "ShareBoard.View.Board.Element",
         "ShareBoard.View.Board.Element.Line",
         "ShareBoard.View.Board.Element.Circle",
+        "ShareBoard.View.Board.Element.Cursor",
         
         "ShareBoard.View.Board",
         
         "ShareBoard.View.Tool",
         "ShareBoard.View.Tool.Line",
         "ShareBoard.View.Tool.Circle",
+        "ShareBoard.View.Tool.Cursor",
         
         "ShareBoard.Layout.Centered",
         "ShareBoard.Layout.Site",
