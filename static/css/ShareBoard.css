@@ -1,16 +1,28 @@
+
+@font-face {
+    font-family : 'CenturyGothicRegular';
+    src         : url('../fonts/gothic/gothic-webfont.eot');
+    src         : local('☺'), url('../fonts/gothic/gothic-webfont.woff') format('woff'), url('../fonts/gothic/gothic-webfont.ttf') format('truetype'), url('../fonts/gothic/gothic-webfont.svg#webfontn4SoYMey') format('svg');
+    
+    font-weight : normal;
+    font-style  : normal;
+}
+
+
 body {
-	font-family : helvetica,arial,freesans,clean,sans-serif;
-	font-size : 15.34px;
-	font-size-adjust : none;
-	font-style : normal;
-	font-variant : normal;
-	font-weight : normal;
-	line-height : normal;
+	font-family        : CenturyGothicRegular, helvetica,arial,freesans,clean,sans-serif;
+	font-size          : 15.34px;
+	font-size-adjust   : none;
+	font-style         : normal;
+	font-variant       : normal;
+	font-weight        : normal;
+	line-height        : normal;
 	
 	overflow-y : auto !important;
 	
 	background-color : white;
 }
+
 
 .grayed {
 	background-color : #e3e0c7 !important;
@@ -45,37 +57,38 @@ a:VISITED {
 
 
 .ShareBoard-Content-Header {
-    background-image: url(../images/background/page.png);
-    background-repeat: repeat-x;
-    
-    border-bottom : 1px solid #e3e0c7;
+    font-size           : large;
+    line-height         : 100%;
 }
 
 
 .ShareBoard-Content-Footer {
-	border-top : 1px solid #d2ceb0;
-	color : #AAA;
-	padding-top : 20px;
+	color          : #AAA;
+	padding-top    : 20px;
 	
-	font-size:12px;
+	font-size      : 12px;
 }
 
 
 .ShareBoard-Widget-NotFound {
-	text-align: center;
+	text-align     : center;
 	
-	font-size   : 26px;
-	font-weight : bold;
+	font-size      : 26px;
+	font-weight    : bold;
 	
-	position: relative;
+	position       : relative;
 }
 
 
 .ShareBoard-Board {
-	cursor : pointer
 }
 
 
 .x-masked {
-    overflow: auto !important;
+    overflow        : auto !important;
 }
+
+
+
+
+
