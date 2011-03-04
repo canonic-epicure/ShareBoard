@@ -45,7 +45,6 @@ a:VISITED {
 }
 
 .ShareBoard-Content {
-	width : 900px
 }
 
 
@@ -92,3 +91,19 @@ a:VISITED {
 
 
 
+.shb-header {
+	background-image       : url(../images/logo.png);
+	background-repeat      : no-repeat;
+	
+	background-position    : right center;
+	
+	height                 : 100px;
+}
+
+
+.sh-color-indicator {
+	width          : 8px;
+	height         : 8px;
+	
+	margin         : 4px;
+}

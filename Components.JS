@@ -1,6 +1,8 @@
 COMPONENTS = {
     
     "Model" : [
+        "ShareBoard.Model.User",
+        
         "ShareBoard.Model.Board.View",
         
         "ShareBoard.Model.Board.Element",
