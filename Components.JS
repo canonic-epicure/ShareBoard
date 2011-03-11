@@ -7,6 +7,7 @@ COMPONENTS = {
         
         "ShareBoard.Model.Board.Element",
         "ShareBoard.Model.Board.Element.Line",
+        "ShareBoard.Model.Board.Element.Path",
         "ShareBoard.Model.Board.Element.Circle",
         "ShareBoard.Model.Board.Element.Cursor",
         
@@ -28,6 +29,7 @@ COMPONENTS = {
         
         "ShareBoard.View.Board.Element",
         "ShareBoard.View.Board.Element.Line",
+        "ShareBoard.View.Board.Element.Path",
         "ShareBoard.View.Board.Element.Circle",
         "ShareBoard.View.Board.Element.Cursor",
         
@@ -35,6 +37,7 @@ COMPONENTS = {
         
         "ShareBoard.View.Tool",
         "ShareBoard.View.Tool.Line",
+        "ShareBoard.View.Tool.Path",
         "ShareBoard.View.Tool.Circle",
         "ShareBoard.View.Tool.Cursor",
         
