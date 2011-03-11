@@ -24,6 +24,11 @@ body {
 }
 
 
+p {
+	padding-top        : 15px;
+	text-align         : justify;
+}
+
 .grayed {
 	background-color : #e3e0c7 !important;
 }
@@ -92,10 +97,11 @@ a:VISITED {
 
 
 .shb-header {
+	margin-top             : 30px;
 	background-image       : url(../images/logo.png);
 	background-repeat      : no-repeat;
 	
-	background-position    : right center;
+	background-position    : center center;
 	
 	height                 : 100px;
 }
