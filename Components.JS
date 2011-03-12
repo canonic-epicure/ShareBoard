@@ -36,6 +36,7 @@ COMPONENTS = {
         "ShareBoard.View.Board",
         
         "ShareBoard.View.Tool",
+        "ShareBoard.View.Tool.MouseTracker",
         "ShareBoard.View.Tool.Line",
         "ShareBoard.View.Tool.Path",
         "ShareBoard.View.Tool.Circle",
