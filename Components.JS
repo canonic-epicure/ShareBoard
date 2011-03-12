@@ -28,6 +28,9 @@ COMPONENTS = {
         "ShareBoard.Widget.Root",
         
         "ShareBoard.View.Board.Element",
+        "ShareBoard.View.Board.Element.Selectable",
+        "ShareBoard.View.Board.Element.Draggable",
+        
         "ShareBoard.View.Board.Element.Line",
         "ShareBoard.View.Board.Element.Path",
         "ShareBoard.View.Board.Element.Circle",
@@ -37,10 +40,13 @@ COMPONENTS = {
         
         "ShareBoard.View.Tool",
         "ShareBoard.View.Tool.MouseTracker",
+        
         "ShareBoard.View.Tool.Line",
         "ShareBoard.View.Tool.Path",
         "ShareBoard.View.Tool.Circle",
+        
         "ShareBoard.View.Tool.Cursor",
+        
         
         "ShareBoard.Layout.Centered",
         "ShareBoard.Layout.Site",
