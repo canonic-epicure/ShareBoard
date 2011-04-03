@@ -113,3 +113,30 @@ a:VISITED {
 	
 	margin         : 4px;
 }
+
+
+.sb-icon-curve {
+	background-image       : url(../images/curve.png) !important;
+}
+
+.sb-icon-circle {
+    background-image       : url(../images/circle.png) !important;
+}
+
+.sb-icon-line {
+    background-image       : url(../images/line.png) !important;
+}
+
+.sb-icon-board {
+    background-image       : url(../images/board.png) !important;
+}
+
+.sb-icon-eraser {
+    background-image       : url(../images/eraser.png) !important;
+}
+
+
+.sh-ownnick-panel .x-panel-header {
+	border-width           : 1px;
+	border-style           : solid;                  
+} 
